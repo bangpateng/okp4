@@ -42,12 +42,13 @@ source $HOME/.bash_profile
 okp4d keys add $WALLET
 ```
 Jangan Lupa Simpan Address & Mnemonic Anda dan Import ke Keplr Wallet
-*Note :* Enter Keyring Passpharse = Kalian Isi Password Bebas dan Jangan Lupa
+
+*Note:* Enter Keyring Passpharse = Kalian Isi Password Bebas dan Jangan Lupa
 
 ```
 okp4d keys add $WALLET --recover
 ```
-*(Opsional)* Gunakan Peritah di Bawah Jika Anda Memiliki Wallet Lama Bisa menggunakan Perintah di atas
+(Opsional) Gunakan Peritah di Bawah Jika Anda Memiliki Wallet Lama Bisa menggunakan Perintah di atas
 
 ## 4. Claim Faucet OKP4
 
