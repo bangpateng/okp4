@@ -95,7 +95,19 @@ okp4d tx staking create-validator \
   --chain-id $OKP4_CHAIN_ID
 ```
 
-## 9. Beberapa Perintah Berguna (Optional)
+## 9 Delete Node (Optional Kalo Pengen Ngapus Aja Pake)
+
+Perintah ini akan sepenuhnya menghapus node dari server. Gunakan dengan risiko Anda sendiri!
+```
+sudo systemctl stop okp4d
+sudo systemctl disable okp4d
+sudo rm /etc/systemd/system/okp4* -rf
+sudo rm $(which okp4d) -rf
+sudo rm $HOME/.okp4d* -rf
+sudo rm $HOME/okp4 -rf
+sed -i '/OKP4_/d' ~/.bash_profile
+```
+## 10. Beberapa Perintah Berguna (Optional)
 
 ### You can check the node logs with the command:
 ```
