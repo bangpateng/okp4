@@ -56,13 +56,13 @@ okp4d keys add $WALLET --recover
 - Done
 
 ## 5. Masukan Variable 2 (Untuk Simpan Informasi Wallet)
-
+```
 OKP4_WALLET_ADDRESS=$(okp4d keys show $WALLET -a)
 OKP4_VALOPER_ADDRESS=$(okp4d keys show $WALLET --bech val -a)
 echo 'export OKP4_WALLET_ADDRESS='${OKP4_WALLET_ADDRESS} >> $HOME/.bash_profile
 echo 'export OKP4_VALOPER_ADDRESS='${OKP4_VALOPER_ADDRESS} >> $HOME/.bash_profile
 source $HOME/.bash_profile
-
+```
 ## 6. Check Sinkron Block
 
 ```
