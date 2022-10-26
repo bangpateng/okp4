@@ -84,17 +84,15 @@ Jika Balance Anda Sudah Masuk, Anda Bisa Lanjut Untuk Membuat Validator
 
 ```
 okp4d tx staking create-validator \
---amount=1000000uknow \
---pubkey=$(okp4d tendermint show-validator) \
---moniker="$NODENAME" \
---chain-id=okp4-nemeton \
---commission-rate="0.01" \
---commission-max-rate="0.10" \
---commission-max-change-rate="0.01" \
---min-self-delegation="1000000" \
---fees=1000uknow \
---from=wallet \
--y
+  --amount 2000000uknow \
+  --from $WALLET \
+  --commission-max-change-rate "0.01" \
+  --commission-max-rate "0.2" \
+  --commission-rate "0.07" \
+  --min-self-delegation "1" \
+  --pubkey  $(okp4d tendermint show-validator) \
+  --moniker $NODENAME \
+  --chain-id $OKP4_CHAIN_ID
 ```
 
 ## 9. Beberapa Perintah Berguna (Optional)
