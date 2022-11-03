@@ -59,7 +59,13 @@ okp4d keys add $WALLET --recover
 ## 5. Masukan Variable 2 (Untuk Simpan Informasi Wallet)
 ```
 OKP4_WALLET_ADDRESS=$(okp4d keys show $WALLET -a)
+```
+Masukan Katasandi Pharse
+```
 OKP4_VALOPER_ADDRESS=$(okp4d keys show $WALLET --bech val -a)
+```
+Masukan Kata Sandi Pharse
+```
 echo 'export OKP4_WALLET_ADDRESS='${OKP4_WALLET_ADDRESS} >> $HOME/.bash_profile
 echo 'export OKP4_VALOPER_ADDRESS='${OKP4_VALOPER_ADDRESS} >> $HOME/.bash_profile
 source $HOME/.bash_profile
